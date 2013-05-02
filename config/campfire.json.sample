@@ -1,0 +1,7 @@
+{
+    "subdomain": "mysubdomain",
+    "token": "campfire token",
+    "icon": "/usr/share/pixmaps/xscreensaver.xpm",
+    "rooms": ["List", "of", "rooms"],
+    "notifications": ["List", "of", "patterns", "to", "check", "for"]
+}
