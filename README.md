@@ -31,9 +31,9 @@ First install libnotify:
 * Gentoo: `emerge libnotify`
 * Arch: `pacman -S libnotify`
 
-First install the gems:
+Then install the gems:
 
-   gem install tinder escape
+    gem install tinder escape
 
 ## More Information ##
 
