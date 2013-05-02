@@ -65,7 +65,7 @@ A list of patterns to check for.
 
 Once setup, you can run the program with:
 
-    ruby snakefire.rb
+    ruby smokesignal.rb
 
 And it will notify you when a campfire message contains one of the configured patterns. Due be aware that the notifications are set as critical for my case, so I don't miss them. 
 
