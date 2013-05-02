@@ -5,14 +5,15 @@ require 'escape'
 
 CONFIG_PATH = "#{File.dirname(__FILE__)}/config/campfire.json"
 LOG_PATH = "#{File.dirname(__FILE__)}/logs"
-
 config = JSON.parse(File.read(CONFIG_PATH))
+ICON_PATH=config['icon']
 
 def dispatch_message(summary, body)
+  
   shell_raw = [
     'notify-send',
     '-u', "critical", '-a', "SmokeSignal",
-    '-i', "#{config['icon']}",
+    '-i', "#{ICON_PATH}",
     "#{summary}", "#{body}"
   ]
 
