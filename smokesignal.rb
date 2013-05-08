@@ -69,7 +69,7 @@ module SmokeSignal
       puts "Listening on #{@room.name}"
       @room.listen do | message |
         @notifications.each do | notification |
-          if message[:body] =~ /#{Regexp.escape(notification)}/i
+          if message[:body] =~ /(\W|\s|^)#{Regexp.escape(notification)}(\W|\p|\s)/i
             dispatch_message "New Campfire Message", "[#{@room.name}] #{message[:user][:name]}: #{message[:body]}"
             log_message @room.name, message[:user][:name], message[:body]
           end
